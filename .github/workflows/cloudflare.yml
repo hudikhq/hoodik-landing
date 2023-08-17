@@ -4,13 +4,11 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+      - develop
 
 jobs:
   ci:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -20,7 +18,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 20
 
       - name: Checkout
         uses: actions/checkout@master
@@ -29,18 +27,20 @@ jobs:
         uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          key: ubuntu-latest-node-v20-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
 
-      - name: Generate
-        run: yarn generate
+      - name: Build
+        run: yarn build
         env:
           NITRO_PRESET: cloudflare
+          NUXT_SSR: "true"
 
       - name: Publish to Cloudflare
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: publish --name fb-nuxt-${{ github.ref_name }}
