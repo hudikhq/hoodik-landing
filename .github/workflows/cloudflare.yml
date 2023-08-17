@@ -35,8 +35,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
 
-      - name: Build
-        run: yarn build
+      - name: Generate
+        run: yarn generate
         env:
           NITRO_PRESET: cloudflare
 
