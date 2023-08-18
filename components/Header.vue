@@ -3,12 +3,8 @@
     <div
       class="flex flex-col gap-y-3 sm:flex-row sm:items-center sm:justify-between"
     >
-      <a href="/"
-        ><div
-          class="flex items-center bg-clip-text text-xl font-bold text-redish-50"
-        >
-          Hoodik
-        </div>
+      <a href="/">
+        <img src="/images/hoodik-sm.svg" height="87" width="100" />
       </a>
       <nav>
         <ul class="flex gap-x-3 font-medium text-gray-200">

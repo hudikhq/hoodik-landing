@@ -3,7 +3,7 @@
     <div class="mb-6 text-2xl font-bold">Features</div>
     <div class="flex flex-col gap-6">
       <div
-        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-900 p-3 md:flex-row"
       >
         <div class="shrink-0">
           <span class="text-[100px]"> 🔐 </span>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-900 p-3 md:flex-row"
       >
         <div class="shrink-0">
           <span class="text-[100px]"> 🔎 </span>
@@ -43,13 +43,13 @@
           </div>
           <p class="mt-3 text-gray-400">
             Metadata is tokenized and stored so it can easily be searched
-            without needing to decrypt offering fast and easy way to find your
+            without needing to decrypt, offering fast and easy way to find your
             files.
           </p>
         </div>
       </div>
       <div
-        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-900 p-3 md:flex-row"
       >
         <div class="shrink-0">
           <span class="text-[100px]"> 🔗 </span>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-900 p-3 md:flex-row"
       >
         <div class="shrink-0">
           <span class="text-[100px]"> 🚀 </span>
@@ -101,7 +101,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+        class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-900 p-3 md:flex-row"
       >
         <div class="shrink-0">
           <span class="text-[100px]"> 🛠️ </span>

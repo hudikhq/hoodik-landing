@@ -8,7 +8,7 @@
           class="text-redish-400 hover:underline"
           target="_blank"
           rel="noopener noreferrer"
-          >HudikHq</a
+          >Hudikhq</a
         >. Built with ❤️ by
         <a
           class="text-redish-400 hover:underline"

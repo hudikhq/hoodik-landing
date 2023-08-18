@@ -19,8 +19,8 @@
       </div>
       <div class="shrink-0">
         <img
-          class="h-80"
-          src="/images/android-chrome-512x512.png"
+          class="h-64"
+          src="/images/hoodik-lg.svg"
           alt="Avatar image"
           loading="lazy"
         />
@@ -28,7 +28,7 @@
     </div>
 
     <div
-      class="flex flex-col items-center gap-x-8 rounded-md bg-brownish-800 p-3 md:flex-row"
+      class="flex flex-col items-center gap-x-8 rounded-md pt-10 md:flex-row"
     >
       <img src="/images/screenshot.png" alt="Hoodik Screenshot" />
     </div>
