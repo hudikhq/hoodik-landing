@@ -20,4 +20,10 @@
       </div>
     </div>
   </div>
+
+  <script
+    defer
+    data-domain="hoodik.io"
+    src="https://plausible.io/js/script.js"
+  ></script>
 </template>
