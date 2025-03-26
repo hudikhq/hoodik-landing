@@ -15,7 +15,7 @@
           href="https://github.com/htunlogic"
           target="_blank"
           rel="noopener noreferrer"
-          >htunlogic</a
+          >Tibor Hudik</a
         >.
       </div>
     </div>
