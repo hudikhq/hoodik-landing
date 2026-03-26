@@ -1,5 +1,12 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
+    "./layouts/**/*.{vue,js,ts,jsx,tsx}",
+    "./pages/**/*.{vue,js,ts,jsx,tsx}",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
   theme: {
     colors: {
       background: "#1E1E1E",

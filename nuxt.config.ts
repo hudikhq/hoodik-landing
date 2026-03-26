@@ -1,22 +1,37 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2026-03-26",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
-  // Defaults options
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-    configPath: "tailwind.config",
-    exposeConfig: false,
-    exposeLevel: 2,
-    config: {},
-    injectPosition: "first",
-    viewer: true,
+  css: ["~/assets/css/tailwind.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
   app: {
     head: {
-      title: "Hoodik - End 2 End Encrypted Cloud Storage",
+      title: "Hoodik - End-to-End Encrypted Cloud Storage",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Hoodik is a lightweight, self-hosted, end-to-end encrypted cloud storage server built with Rust and Vue. Your files, your keys, your server.",
+        },
+        {
+          property: "og:title",
+          content: "Hoodik - End-to-End Encrypted Cloud Storage",
+        },
+        {
+          property: "og:description",
+          content:
+            "Lightweight, self-hosted cloud storage with end-to-end encryption. Built with Rust and Vue.",
+        },
+        { property: "og:image", content: "/images/screenshot.png" },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
       link: [
         {
           rel: "apple-touch-icon",
@@ -63,7 +78,6 @@ export default defineNuxtConfig({
           sizes: "180x180",
           href: "/images/apple-icon-180x180.png",
         },
-
         {
           rel: "icon",
           type: "image/png",
@@ -82,7 +96,6 @@ export default defineNuxtConfig({
           sizes: "96x96",
           href: "/images/favicon-96x96.png",
         },
-
         {
           rel: "icon",
           type: "image/png",

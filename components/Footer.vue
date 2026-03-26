@@ -1,29 +1,35 @@
 <template>
   <div class="mx-auto max-w-screen-lg px-3 py-6">
     <div class="border-t border-brownish-600 pt-5">
-      <div class="text-sm text-brownish-50 text-center">
-        © Copyright 2023 by
-        <a
-          href="https://github.com/hudikhq"
-          class="text-redish-400 hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Hudikhq</a
-        >. Built with ❤️ by
-        <a
-          class="text-redish-400 hover:underline"
-          href="https://github.com/htunlogic"
-          target="_blank"
-          rel="noopener noreferrer"
-          >htunlogic</a
-        >.
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-brownish-50">
+        <div>
+          &copy; {{ new Date().getFullYear() }}
+          <a
+            href="https://github.com/hudikhq"
+            class="text-redish-200 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Hudik d.o.o.</a>. Built with &#10084;&#65039; by
+          <a
+            class="text-redish-200 hover:underline"
+            href="https://github.com/htunlogic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >htunlogic</a>.
+        </div>
+        <div class="flex items-center gap-4">
+          <a
+            href="https://github.com/hudikhq/hoodik"
+            class="text-brownish-100 hover:text-white transition-colors"
+            target="_blank"
+          >GitHub</a>
+          <a
+            href="https://hub.docker.com/r/hudik/hoodik"
+            class="text-brownish-100 hover:text-white transition-colors"
+            target="_blank"
+          >Docker Hub</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <script
-    defer
-    data-domain="hoodik.io"
-    src="https://plausible.io/js/script.js"
-  ></script>
 </template>
