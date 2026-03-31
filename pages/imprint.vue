@@ -18,7 +18,8 @@ useHead({
       >
         <h2>Company Information</h2>
         <p>
-          <strong>Hudik d.o.o.</strong><br />
+          <strong>Hudik d.o.o.</strong> operates the Hoodik product and the
+          <a href="https://hoodik.io" target="_blank" rel="noopener noreferrer">hoodik.io</a> website.<br /><br />
           Kapelska 6<br />
           31000 Osijek<br />
           Croatia
