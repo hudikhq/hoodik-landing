@@ -30,6 +30,13 @@
           >Docker Hub</a>
         </div>
       </div>
+      <div class="flex items-center justify-center gap-3 mt-3 text-xs text-brownish-100">
+        <NuxtLink to="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</NuxtLink>
+        <span class="text-brownish-400">&middot;</span>
+        <NuxtLink to="/terms-of-service" class="hover:text-white transition-colors">Terms of Service</NuxtLink>
+        <span class="text-brownish-400">&middot;</span>
+        <NuxtLink to="/imprint" class="hover:text-white transition-colors">Imprint</NuxtLink>
+      </div>
     </div>
   </div>
 </template>

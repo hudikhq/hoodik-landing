@@ -1,7 +1,5 @@
 <template>
-  <Header />
-  <Hero />
-  <Features />
-  <Cta />
-  <Footer />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

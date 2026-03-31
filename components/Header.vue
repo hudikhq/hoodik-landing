@@ -1,9 +1,9 @@
 <template>
   <div class="mx-auto max-w-screen-lg px-3 py-4">
     <div class="flex items-center justify-between">
-      <a href="/" class="flex items-center gap-2" title="Hoodik.io">
+      <NuxtLink to="/" class="flex items-center gap-2" title="Hoodik.io">
         <img src="/images/hoodik-sm.svg" height="87" width="100" alt="Hoodik" />
-      </a>
+      </NuxtLink>
 
       <div class="flex items-center gap-4">
         <a
