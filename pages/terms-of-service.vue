@@ -48,11 +48,12 @@ useHead({
 
         <h2>4. Subscriptions and Payments</h2>
         <p>The App requires an active subscription or lifetime purchase after the free trial period.</p>
-        <ul>
-          <li><strong>Monthly:</strong> $4.99/month</li>
-          <li><strong>Annual:</strong> $39.99/year</li>
-          <li><strong>Lifetime:</strong> $149.99 (one-time purchase)</li>
-        </ul>
+        <p>
+          Three plans are available: <strong>Monthly</strong>, <strong>Annual</strong>, and
+          <strong>Lifetime</strong> (one-time purchase). Prices vary by region due to local taxes,
+          currency conversion, and store pricing policies. The final price is displayed in your
+          local currency on the Apple App Store or Google Play before purchase.
+        </p>
         <p>
           Payments are processed through the Apple App Store or Google Play. Subscriptions
           auto-renew unless cancelled at least 24 hours before the end of the current billing

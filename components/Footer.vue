@@ -28,6 +28,11 @@
             class="text-brownish-100 hover:text-white transition-colors"
             target="_blank"
           >Docker Hub</a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
+            class="text-brownish-100 hover:text-white transition-colors"
+            target="_blank"
+          >Android App</a>
         </div>
       </div>
       <div class="flex items-center justify-center gap-3 mt-3 text-xs text-brownish-100">

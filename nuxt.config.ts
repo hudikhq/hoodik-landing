@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Hoodik is a lightweight, self-hosted, end-to-end encrypted cloud storage server built with Rust and Vue. Your files, your keys, your server.",
+            "Hoodik is a lightweight, self-hosted, end-to-end encrypted cloud storage server built with Rust and Vue. Available as an Android app with native Rust encryption. Your files, your keys, your server.",
         },
         {
           property: "og:title",
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Lightweight, self-hosted cloud storage with end-to-end encryption. Built with Rust and Vue.",
+            "Lightweight, self-hosted cloud storage with end-to-end encryption. Built with Rust and Vue. Android app available.",
         },
         { property: "og:image", content: "/images/screenshot.png" },
         { name: "twitter:card", content: "summary_large_image" },

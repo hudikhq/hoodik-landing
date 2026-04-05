@@ -130,7 +130,7 @@
             </div>
             <p class="text-sm text-brownish-100 leading-relaxed">
               Chunked concurrent transfers, Rust backend performance, and
-              SQLite or PostgreSQL storage. Runs on less than 20 MB RAM.
+              SQLite or PostgreSQL storage. Idles at around 20 MB RAM.
             </p>
           </div>
         </div>
