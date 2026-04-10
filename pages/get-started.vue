@@ -246,9 +246,49 @@ sudo apt install caddy</code></pre>
         </li>
         <li class="flex items-start gap-3">
           <span class="text-greeny-300 mt-0.5 flex-shrink-0">&bull;</span>
-          <span><strong class="text-dirty-white">Storage:</strong> Hoodik idles at around 20 MB of RAM. Your storage limit is just the size of your VPS disk.</span>
+          <span><strong class="text-dirty-white">Storage:</strong> Hoodik idles at around 20 MB of RAM. Your storage limit is the size of your VPS disk &mdash; or virtually unlimited with S3 storage.</span>
         </li>
       </ul>
+    </div>
+
+    <!-- S3 storage -->
+    <div class="mt-8 rounded-xl bg-gradient-to-br from-brownish-800 to-brownish-900 border border-blueish-400/30 p-6">
+      <div class="flex items-start gap-4">
+        <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-blueish-400/10 flex items-center justify-center">
+          <span class="text-2xl">☁️</span>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold mb-2">Scale with S3 storage</h2>
+          <p class="text-brownish-100 text-sm leading-relaxed mb-4">
+            VPS disks are small and expensive. Instead of paying for a bigger server, connect Hoodik
+            to any <strong class="text-dirty-white">S3-compatible storage</strong> and get terabytes
+            of encrypted storage for a fraction of the cost. Your VPS still runs the server &mdash;
+            the encrypted file chunks just live in the cloud. S3 only ever sees ciphertext.
+          </p>
+          <p class="text-brownish-100 text-sm leading-relaxed mb-4">
+            Services like <strong class="text-dirty-white">Backblaze B2</strong> ($6/TB/mo),
+            <strong class="text-dirty-white">Wasabi</strong> ($7/TB/mo), or
+            <strong class="text-dirty-white">AWS S3</strong> work out of the box. You can also
+            self-host with <strong class="text-dirty-white">MinIO</strong>.
+          </p>
+          <div class="rounded-lg bg-brownish-900 border border-brownish-600 overflow-hidden">
+            <div class="flex items-center justify-between px-4 py-2 bg-brownish-800 border-b border-brownish-600">
+              <span class="text-xs text-brownish-100">Add to your docker run command</span>
+            </div>
+            <pre class="px-4 py-3 text-sm overflow-x-auto"><code class="text-greeny-200">-e STORAGE_PROVIDER='s3' \
+-e S3_BUCKET='my-hoodik-bucket' \
+-e S3_REGION='us-east-1' \
+-e S3_ACCESS_KEY='your-access-key' \
+-e S3_SECRET_KEY='your-secret-key'</code></pre>
+          </div>
+          <p class="text-sm text-brownish-100 mt-3">
+            Already have local data? Run
+            <code class="text-greeny-200">docker exec hoodik hoodik migrate-storage</code>
+            to move existing encrypted chunks to S3. The migration is idempotent &mdash; safe to re-run
+            if interrupted.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Bottom CTA -->

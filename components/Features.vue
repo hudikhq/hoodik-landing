@@ -51,6 +51,23 @@
         </div>
       </div>
 
+      <!-- Encrypted Notes -->
+      <div class="feature-card group rounded-xl bg-brownish-900 border border-brownish-600 p-5 transition-all duration-300 hover:border-brownish-400">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-greeny-400/10 flex items-center justify-center">
+            <span class="text-2xl">📝</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Encrypted Notes</h3>
+            <p class="text-sm text-brownish-100 leading-relaxed">
+              Create and edit rich markdown notes with a WYSIWYG editor —
+              right inside your encrypted vault. Auto-saved, fully
+              encrypted, and searchable like any other file.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- Public Links -->
       <div class="feature-card group rounded-xl bg-brownish-900 border border-brownish-600 p-5 transition-all duration-300 hover:border-brownish-400">
         <div class="flex items-start gap-4">
@@ -111,6 +128,23 @@
             <p class="text-sm text-brownish-100 leading-relaxed">
               Single container deployment with multi-arch images — amd64,
               armv6, armv7, arm64. Up and running in seconds.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- S3 Storage -->
+      <div class="feature-card group rounded-xl bg-brownish-900 border border-brownish-600 p-5 transition-all duration-300 hover:border-brownish-400">
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-blueish-400/10 flex items-center justify-center">
+            <span class="text-2xl">☁️</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2">S3-Compatible Storage</h3>
+            <p class="text-sm text-brownish-100 leading-relaxed">
+              Store encrypted chunks on any S3-compatible service &mdash;
+              AWS, Backblaze B2, Wasabi, MinIO. Scale to terabytes without
+              growing your VPS disk.
             </p>
           </div>
         </div>
