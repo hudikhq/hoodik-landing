@@ -18,6 +18,8 @@
           >htunlogic</a>.
         </div>
         <div class="flex items-center gap-4">
+          <NuxtLink to="/blog" class="text-brownish-100 hover:text-white transition-colors">Blog</NuxtLink>
+          <NuxtLink to="/vs" class="text-brownish-100 hover:text-white transition-colors">Compare</NuxtLink>
           <a
             href="https://github.com/hudikhq/hoodik"
             class="text-brownish-100 hover:text-white transition-colors"

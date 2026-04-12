@@ -45,3 +45,46 @@ pre code {
 ::selection {
   background-color: rgba(166, 52, 70, 0.4);
 }
+
+/* Prose styling for blog/content pages */
+@layer components {
+  .prose-hoodik {
+    @apply prose max-w-none
+      prose-headings:text-dirty-white
+      prose-p:text-brownish-50
+      prose-a:text-redish-200
+      hover:prose-a:text-redish-100
+      prose-strong:text-dirty-white
+      prose-li:text-brownish-50
+      prose-hr:border-brownish-600
+      prose-blockquote:text-brownish-100
+      prose-blockquote:border-brownish-500
+      prose-code:text-greeny-200
+      prose-code:bg-brownish-800
+      prose-code:px-1.5
+      prose-code:py-0.5
+      prose-code:rounded
+      prose-code:before:content-none
+      prose-code:after:content-none
+      prose-pre:bg-brownish-900
+      prose-pre:border
+      prose-pre:border-brownish-600
+      prose-pre:rounded-lg
+      prose-img:rounded-xl
+      prose-img:border
+      prose-img:border-brownish-600
+      prose-th:text-dirty-white
+      prose-td:text-brownish-50;
+  }
+
+  /* Code blocks inside prose — match get-started page styling */
+  .prose-hoodik pre code {
+    @apply text-greeny-200 bg-transparent p-0;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+    line-height: 1.6;
+  }
+
+  .prose-hoodik pre code span {
+    color: #C1E1A1 !important;
+  }
+}

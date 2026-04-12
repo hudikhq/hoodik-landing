@@ -3,6 +3,26 @@ export default defineNuxtConfig({
   compatibilityDate: "2026-03-26",
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
+
+  modules: ["@nuxt/content", "@nuxtjs/sitemap"],
+
+  content: {
+    highlight: false,
+  },
+
+  sitemap: {
+    exclude: ["/privacy-policy", "/terms-of-service", "/imprint"],
+  },
+
+  routeRules: {
+    "/blog/**": { prerender: true },
+    "/vs/**": { prerender: true },
+  },
+
+  site: {
+    url: "https://hoodik.io",
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
