@@ -1,6 +1,7 @@
 {
   "name": "hoodik-landing",
   "private": true,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
