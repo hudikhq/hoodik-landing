@@ -14,9 +14,11 @@ export default defineNuxtConfig({
     exclude: ["/privacy-policy", "/terms-of-service", "/imprint"],
   },
 
-  routeRules: {
-    "/blog/**": { prerender: true },
-    "/vs/**": { prerender: true },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/", "/blog", "/vs"],
+    },
   },
 
   site: {
