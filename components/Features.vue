@@ -58,11 +58,11 @@
             <span class="text-2xl">📝</span>
           </div>
           <div>
-            <h3 class="text-lg font-semibold mb-2">Encrypted Notes</h3>
+            <h3 class="text-lg font-semibold mb-2">Encrypted Notes with History</h3>
             <p class="text-sm text-brownish-100 leading-relaxed">
-              Create and edit rich markdown notes with a WYSIWYG editor —
-              right inside your encrypted vault. Auto-saved, fully
-              encrypted, and searchable like any other file.
+              Write markdown notes in a WYSIWYG editor inside your encrypted
+              vault. Auto-saved, encrypted with the same per-file keys as
+              everything else, and every version is kept so you can roll back.
             </p>
           </div>
         </div>
@@ -158,17 +158,19 @@
           </div>
           <div>
             <div class="flex flex-wrap items-center gap-2 mb-2">
-              <h3 class="text-lg font-semibold">Blazing Fast</h3>
+              <h3 class="text-lg font-semibold">Fast by Design</h3>
               <span class="rounded-full px-2 py-0.5 text-xs font-semibold bg-orangy-400/20 text-orangy-200 border border-orangy-400/30">Rust</span>
               <span class="rounded-full px-2 py-0.5 text-xs font-semibold bg-greeny-400/20 text-greeny-200 border border-greeny-400/30">Vue.js</span>
             </div>
             <p class="text-sm text-brownish-100 leading-relaxed">
-              Chunked concurrent transfers, Rust backend performance, and
-              SQLite or PostgreSQL storage. Idles at around 20 MB RAM.
+              Chunked concurrent transfers, single-request tar bulk
+              downloads, SQLite or PostgreSQL metadata. Idles at around
+              20 MB RAM.
             </p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </template>

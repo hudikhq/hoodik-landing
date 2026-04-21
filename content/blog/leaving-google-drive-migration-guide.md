@@ -151,7 +151,7 @@ For large migrations, this is best done on a wired connection. Each file gets en
 
 ### Via the Mobile App
 
-If you've already moved files to your phone, the Hoodik Android/iOS app supports uploading files and photos. The app handles encryption through the same Rust code as the web version (via native FFI), so security is identical.
+If you've already moved files to your phone, the Hoodik Android app supports uploading files and photos (iOS is in the pipeline). The app handles encryption through the same Rust code as the web version (via native FFI), so security is identical.
 
 ### Organization Strategy
 
@@ -197,7 +197,7 @@ It would be dishonest not to mention the tradeoffs:
 
 **Zero effort maintenance**: Google Drive just works. Self-hosting means keeping a server running, doing occasional updates, and managing backups of your database. It's minimal work (Hoodik is a single Docker container), but it's not zero.
 
-**Seamless mobile integration**: Google Drive is deeply integrated into Android. Hoodik has dedicated Android and iOS apps that work well, but it's not baked into the OS the way Google's apps are.
+**Deep mobile integration**: Google Drive is baked into Android at the OS level. Hoodik ships a dedicated Android app (iOS and desktop clients are on the way) that works well, but it isn't integrated into the OS the way Google's apps are.
 
 **AI features**: Google's AI-powered search, suggested files, and smart categorization all require reading your files. Privacy and AI convenience are currently at odds.
 

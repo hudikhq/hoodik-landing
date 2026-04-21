@@ -108,7 +108,7 @@ When it's all running you get:
 - Multi-user support with no per-user fees — set up accounts for family members
 - Public link sharing with expiration dates and optional password protection
 - Built-in rich text editor for encrypted notes with full-text search
-- Mobile apps for Android and iOS
+- An Android app (iOS and desktop on the way) that connects to the same server
 - A clean URL like `cloud.yourdomain.com` that works everywhere
 - Network-wide ad blocking thrown in for free
 

@@ -26,9 +26,9 @@ features:
     competitor: true
     note: "Filen has a full sync client with 5 modes including two-way, local-to-cloud, and cloud-to-local."
   - name: "File Versioning"
-    hoodik: false
+    hoodik: "partial"
     competitor: true
-    note: "Filen keeps previous versions of files accessible for recovery."
+    note: "Filen versions every file. Hoodik keeps full version history for editable markdown notes; versioning for uploaded binary files isn't available yet."
   - name: "Mobile Apps"
     hoodik: true
     competitor: true
@@ -75,7 +75,7 @@ Where they differ is search. Filen's search operates on encrypted metadata clien
 
 The desktop sync client is Filen's standout feature. It offers five sync modes: two-way sync, local-to-cloud backup, cloud-to-local mirror, local-to-local copy (through cloud), and cloud-to-cloud. It handles conflict resolution, can be configured per folder, and is generally reliable. If you need your local filesystem and cloud storage to stay in sync automatically, Filen has a real advantage. Hoodik doesn't currently have a desktop sync client.
 
-File versioning is also notable. Filen keeps previous versions of your files — if you accidentally overwrite a document, you can roll back. Hoodik doesn't have versioning yet; what you upload is what's stored.
+File versioning is also a point in Filen's favor. Filen keeps previous versions of every file you upload. Hoodik has version history for editable markdown notes — every save is kept and you can roll back — but versioning for regular uploaded files isn't available yet.
 
 On sharing: both support password-protected links with expiration dates, but Filen adds download count limits and account-to-account sharing. Hoodik's password mechanism is distinctive — the link key in the URL fragment acts as the password. If you omit it from the shared URL, recipients must enter it manually via a UI prompt.
 
