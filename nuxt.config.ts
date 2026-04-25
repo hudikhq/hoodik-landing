@@ -131,6 +131,13 @@ export default defineNuxtConfig({
           href: "/images/android-icon-512x512.png",
         },
       ],
+      script: [
+        {
+          src: "https://umami.hoodik.io/script.js",
+          defer: true,
+          "data-website-id": "d868a1bd-c688-4c81-a386-8ba88abc9522",
+        },
+      ],
     },
   },
 });
