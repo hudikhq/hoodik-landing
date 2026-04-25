@@ -1,0 +1,51 @@
+# Hoodik
+
+> Hoodik is a lightweight, self-hosted, end-to-end encrypted cloud storage server. Files are encrypted in the user's browser (or mobile app) before they ever leave the device — the server stores only ciphertext and never has access to plaintext data, file names, thumbnails, or encryption keys.
+
+The server is open source (CC BY-NC 4.0) and runs as a single Docker container. It's built in Rust (Actix-web) with a Vue 3 + WebAssembly frontend; the mobile app is Flutter sharing the same Rust crypto crates via FFI. Encryption uses RSA-2048 for asymmetric operations and AEGIS-128L (hardware-accelerated AEAD) for file content. Supported storage backends: local disk and any S3-compatible object store — Backblaze B2, Wasabi, AWS S3, Cloudflare R2, MinIO.
+
+Hoodik is built and maintained by Hudik d.o.o. The self-hosted server is free for personal use. The native mobile app is a paid commercial product distributed through app stores. There is no managed/SaaS offering — running a Hoodik server is the user's responsibility.
+
+## Getting Started
+
+- [Quick Start Guide](https://hoodik.io/get-started): Docker deployment, environment variables, S3 configuration, first-account setup
+- [Server Source Code](https://github.com/hudikhq/hoodik): GitHub repository — releases, issues, security policy
+- [Latest Server Release](https://github.com/hudikhq/hoodik/releases/latest): current stable version
+- [Docker Image](https://hub.docker.com/r/hudik/hoodik): `hudik/hoodik:latest` on Docker Hub
+
+## Security and Architecture
+
+- [End-to-End Encryption Explained](https://hoodik.io/blog/end-to-end-encryption-explained): what E2E means in practice; what the server can and cannot see
+- [Why Your Cloud Provider Can Read Your Files](https://hoodik.io/blog/why-your-cloud-provider-can-read-your-files): threat model that makes E2E necessary
+- [AEGIS-128L: Hardware-Accelerated Cipher](https://hoodik.io/blog/aegis-128l-hardware-accelerated-encryption): why Hoodik uses AEGIS-128L over AES-GCM or ChaCha20-Poly1305
+
+## Self-Hosting Guides
+
+- [How to Update Your Hoodik Server](https://hoodik.io/blog/how-to-update-your-hoodik-server): manual Docker updates, Watchtower auto-updates, Diun notifications, Unraid
+- [Backblaze B2 + Hoodik: Encrypted Storage at $6/TB](https://hoodik.io/blog/backblaze-b2-hoodik-unlimited-encrypted-storage): S3-compatible storage backend setup
+- [Raspberry Pi Encrypted Cloud Server](https://hoodik.io/blog/raspberry-pi-private-encrypted-cloud): full home-server stack with Caddy, Pi-hole, and Cloudflare Tunnel
+- [Unraid Container Templates](https://github.com/hudikhq/hoodik-unraid): community-app templates for Unraid NAS deployments
+
+## Why Self-Hosted
+
+- [Self-Hosted Cloud Storage: Why It Matters](https://hoodik.io/blog/self-hosted-cloud-storage-why-it-matters): the case for owning your data
+- [Leaving Google Drive: Migration Guide](https://hoodik.io/blog/leaving-google-drive-migration-guide): step-by-step migration from Google Drive
+- [The True Cost of Cloud Storage](https://hoodik.io/blog/true-cost-of-cloud-storage): self-hosted vs commercial cloud pricing breakdown
+
+## Comparisons
+
+- [Hoodik vs Nextcloud](https://hoodik.io/vs/nextcloud): largest open-source self-hosted cloud
+- [Hoodik vs Proton Drive](https://hoodik.io/vs/proton-drive): hosted E2E cloud from Proton
+- [Hoodik vs Tresorit](https://hoodik.io/vs/tresorit): enterprise E2E cloud
+- [Hoodik vs Filen](https://hoodik.io/vs/filen): hosted E2E cloud
+- [Hoodik vs Seafile](https://hoodik.io/vs/seafile): open-source self-hosted cloud
+
+## Mobile App
+
+- [Hoodik on Google Play](https://play.google.com/store/apps/details?id=com.hudikhq.hoodik): Android client; iOS and macOS releases in progress
+
+## Optional
+
+- [Blog Index](https://hoodik.io/blog): all posts, filterable by category (Privacy, Guides, Technical, Comparisons)
+- [Comparisons Index](https://hoodik.io/vs): all "vs" comparisons
+- [Sponsor Hoodik](https://hoodik.io/sponsor): support continued development
