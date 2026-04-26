@@ -34,6 +34,8 @@ useHead({
     { name: "description", content: page.value?.description || "" },
     { property: "og:title", content: page.value?.title || "" },
     { property: "og:description", content: page.value?.description || "" },
+    { property: "og:image", content: "https://hoodik.io/images/screenshot.png" },
+    { property: "og:url", content: `https://hoodik.io/vs/${slug}` },
     { property: "og:type", content: "article" },
     { name: "twitter:card", content: "summary_large_image" },
   ],
@@ -54,6 +56,18 @@ useHead({
           description: "Self-hosted, end-to-end encrypted cloud storage",
           url: "https://hoodik.io",
         },
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://hoodik.io" },
+          { "@type": "ListItem", position: 2, name: "Compare", item: "https://hoodik.io/vs" },
+          { "@type": "ListItem", position: 3, name: page.value?.title, item: `https://hoodik.io/vs/${slug}` },
+        ],
       }),
     },
   ],

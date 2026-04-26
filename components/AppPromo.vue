@@ -70,6 +70,7 @@
             <a
               href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
               target="_blank"
+              data-umami-event="playstore-apppromo"
               class="inline-block transition-opacity hover:opacity-80"
             >
               <img

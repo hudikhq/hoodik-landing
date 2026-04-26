@@ -71,7 +71,8 @@ useHead({
     { name: "description", content: post.value?.description || "" },
     { property: "og:title", content: post.value?.title || "" },
     { property: "og:description", content: post.value?.description || "" },
-    { property: "og:image", content: post.value?.image || "/images/screenshot.png" },
+    { property: "og:image", content: post.value?.image ? `https://hoodik.io${post.value.image}` : "https://hoodik.io/images/screenshot.png" },
+    { property: "og:url", content: `https://hoodik.io/blog/${slug}` },
     { property: "og:type", content: "article" },
     { name: "twitter:card", content: "summary_large_image" },
   ],
@@ -99,6 +100,18 @@ useHead({
           logo: { "@type": "ImageObject", url: "https://hoodik.io/images/hoodik-sm.svg" },
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": `https://hoodik.io/blog/${slug}` },
+      }),
+    },
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://hoodik.io" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://hoodik.io/blog" },
+          { "@type": "ListItem", position: 3, name: post.value?.title, item: `https://hoodik.io/blog/${slug}` },
+        ],
       }),
     },
   ],

@@ -36,6 +36,7 @@
         <a
           href="https://hub.docker.com/r/hudik/hoodik"
           target="_blank"
+          data-umami-event="docker-header"
           title="Docker Hub"
           class="hidden sm:flex items-center gap-1.5 text-sm text-brownish-100 hover:text-white transition-colors"
         >
@@ -48,6 +49,7 @@
         <a
           href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
           target="_blank"
+          data-umami-event="playstore-header"
           title="Get it on Google Play"
           class="hidden sm:flex items-center gap-1.5 text-sm text-brownish-100 hover:text-white transition-colors"
         >
@@ -58,6 +60,7 @@
         <a
           href="https://github.com/hudikhq/hoodik"
           target="_blank"
+          data-umami-event="github-header"
           title="GitHub"
           class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-brownish-800 hover:bg-brownish-600 border border-brownish-600 text-sm text-dirty-white transition-all duration-200"
         >

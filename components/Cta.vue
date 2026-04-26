@@ -13,6 +13,7 @@
         <a
           href="https://github.com/hudikhq/hoodik"
           target="_blank"
+          data-umami-event="github-cta"
           class="flex items-center gap-3 px-8 py-4 rounded-lg bg-redish-400 hover:bg-redish-300 text-white font-semibold text-lg transition-all duration-200 hover:shadow-lg hover:shadow-redish-400/20"
         >
           <img src="/images/github-mark-white.png" alt="GitHub" class="h-6 w-6" />
@@ -21,6 +22,7 @@
         <a
           href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
           target="_blank"
+          data-umami-event="playstore-cta"
           class="flex items-center gap-3 px-8 py-4 rounded-lg bg-brownish-800 hover:bg-brownish-600 text-dirty-white font-semibold text-lg border border-brownish-500 transition-all duration-200"
         >
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.732l-2.807 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>

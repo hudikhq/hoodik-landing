@@ -51,7 +51,16 @@ export default defineNuxtConfig({
           content:
             "Lightweight, self-hosted cloud storage with end-to-end encryption. Encrypted notes, S3 backend, mobile app. Built with Rust and Vue.",
         },
-        { property: "og:image", content: "/images/screenshot.png" },
+        { property: "og:image", content: "https://hoodik.io/images/screenshot.png" },
+        { property: "og:image:width", content: "2982" },
+        { property: "og:image:height", content: "1772" },
+        {
+          property: "og:image:alt",
+          content: "Hoodik dashboard — end-to-end encrypted cloud storage",
+        },
+        { property: "og:site_name", content: "Hoodik" },
+        { property: "og:locale", content: "en_US" },
+        { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [

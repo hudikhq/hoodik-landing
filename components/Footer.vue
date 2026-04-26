@@ -24,16 +24,19 @@
             href="https://github.com/hudikhq/hoodik"
             class="text-brownish-100 hover:text-white transition-colors"
             target="_blank"
+            data-umami-event="github-footer"
           >GitHub</a>
           <a
             href="https://hub.docker.com/r/hudik/hoodik"
             class="text-brownish-100 hover:text-white transition-colors"
             target="_blank"
+            data-umami-event="docker-footer"
           >Docker Hub</a>
           <a
             href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
             class="text-brownish-100 hover:text-white transition-colors"
             target="_blank"
+            data-umami-event="playstore-footer"
           >Android App</a>
         </div>
       </div>

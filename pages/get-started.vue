@@ -213,6 +213,7 @@ sudo apt install caddy</code></pre>
         <a
           href="https://play.google.com/store/apps/details?id=com.hudikhq.hoodik"
           target="_blank"
+          data-umami-event="playstore-getstarted"
           class="inline-block transition-opacity hover:opacity-80"
         >
           <img
@@ -297,6 +298,7 @@ sudo apt install caddy</code></pre>
       <a
         href="https://github.com/hudikhq/hoodik/issues"
         target="_blank"
+        data-umami-event="github-issues-getstarted"
         class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brownish-800 hover:bg-brownish-600 text-dirty-white font-semibold border border-brownish-500 transition-all duration-200"
       >
         <img src="/images/github-mark-white.png" alt="GitHub" class="h-5 w-5" />
@@ -305,6 +307,90 @@ sudo apt install caddy</code></pre>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Deploy Hoodik on a VPS in 10 Minutes — Self-Hosted Encrypted Cloud Storage",
+  meta: [
+    { name: "description", content: "Step-by-step guide to deploying Hoodik on any VPS with Docker and Caddy. End-to-end encrypted cloud storage in about 10 minutes." },
+    { property: "og:title", content: "Deploy Hoodik on a VPS in 10 Minutes" },
+    { property: "og:description", content: "Step-by-step guide to deploying your own end-to-end encrypted cloud storage with Docker and Caddy on any VPS." },
+    { property: "og:url", content: "https://hoodik.io/get-started" },
+    { property: "og:image", content: "https://hoodik.io/images/screenshot.png" },
+    { property: "og:type", content: "article" },
+    { name: "twitter:card", content: "summary_large_image" },
+  ],
+  link: [
+    { rel: "canonical", href: "https://hoodik.io/get-started" },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: "Deploy Hoodik on a VPS in 10 Minutes",
+        description: "Step-by-step guide to deploying Hoodik on any VPS with Docker and Caddy. End-to-end encrypted cloud storage in about 10 minutes.",
+        totalTime: "PT10M",
+        image: "https://hoodik.io/images/screenshot.png",
+        supply: [
+          { "@type": "HowToSupply", name: "VPS (any provider — Hetzner, DigitalOcean, Linode, Contabo)" },
+          { "@type": "HowToSupply", name: "Domain name pointed to the VPS" },
+          { "@type": "HowToSupply", name: "SSH access to the server" },
+        ],
+        tool: [
+          { "@type": "HowToTool", name: "Docker" },
+          { "@type": "HowToTool", name: "Caddy reverse proxy" },
+        ],
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "Point your domain to the server",
+            text: "Create an A record at your domain registrar pointing your subdomain (e.g. cloud.yourdomain.com) to your VPS IP address.",
+            url: "https://hoodik.io/get-started#step-1",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "Install Docker",
+            text: "SSH into your VPS and install Docker with one command: curl -fsSL https://get.docker.com | sh",
+            url: "https://hoodik.io/get-started#step-2",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "Install Caddy as a reverse proxy",
+            text: "Install Caddy and configure it to proxy your domain to localhost:5443. Caddy automatically obtains and renews Let's Encrypt certificates.",
+            url: "https://hoodik.io/get-started#step-3",
+          },
+          {
+            "@type": "HowToStep",
+            position: 4,
+            name: "Start Hoodik",
+            text: "Run the Hoodik container with docker run, mounting /opt/hoodik/data as the data volume and exposing port 5443. SQLite is the default database — no extra setup required.",
+            url: "https://hoodik.io/get-started#step-4",
+          },
+          {
+            "@type": "HowToStep",
+            position: 5,
+            name: "Create your account",
+            text: "Open your domain in a browser and register. The first user automatically becomes admin. Save the generated private key somewhere safe — it is the only way to recover your encrypted data.",
+            url: "https://hoodik.io/get-started#step-5",
+          },
+          {
+            "@type": "HowToStep",
+            position: 6,
+            name: "Connect the app",
+            text: "Download the Hoodik mobile app, enter your server URL, and log in. Files are encrypted on your device before they ever reach the server.",
+            url: "https://hoodik.io/get-started#step-6",
+          },
+        ],
+      }),
+    },
+  ],
+});
+</script>
 
 <style scoped>
 .guide-gradient {

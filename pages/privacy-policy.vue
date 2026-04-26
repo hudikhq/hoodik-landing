@@ -4,6 +4,12 @@ useHead({
   meta: [
     { name: 'robots', content: 'noindex, nofollow' },
     { name: 'description', content: 'Privacy Policy for Hoodik - End-to-End Encrypted Cloud Storage' },
+    { property: 'og:title', content: 'Privacy Policy - Hoodik' },
+    { property: 'og:description', content: 'Privacy Policy for Hoodik - End-to-End Encrypted Cloud Storage' },
+    { property: 'og:url', content: 'https://hoodik.io/privacy-policy' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hoodik.io/privacy-policy' },
   ],
 })
 </script>

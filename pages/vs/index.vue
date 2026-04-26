@@ -45,6 +45,11 @@ useHead({
     { name: "description", content: "See how Hoodik compares to Nextcloud, Proton Drive, Filen, Tresorit, and Seafile." },
     { property: "og:title", content: "Compare - Hoodik vs Other Cloud Storage" },
     { property: "og:description", content: "See how Hoodik compares to Nextcloud, Proton Drive, Filen, Tresorit, and Seafile." },
+    { property: "og:url", content: "https://hoodik.io/vs" },
+    { property: "og:image", content: "https://hoodik.io/images/screenshot.png" },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary_large_image" },
   ],
+  link: [{ rel: "canonical", href: "https://hoodik.io/vs" }],
 });
 </script>

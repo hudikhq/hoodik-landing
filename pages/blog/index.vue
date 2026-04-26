@@ -62,6 +62,11 @@ useHead({
     { name: "description", content: "Privacy, encryption, and self-hosted storage — explained and compared." },
     { property: "og:title", content: "Blog - Hoodik" },
     { property: "og:description", content: "Privacy, encryption, and self-hosted storage — explained and compared." },
+    { property: "og:url", content: "https://hoodik.io/blog" },
+    { property: "og:image", content: "https://hoodik.io/images/screenshot.png" },
+    { property: "og:type", content: "website" },
+    { name: "twitter:card", content: "summary_large_image" },
   ],
+  link: [{ rel: "canonical", href: "https://hoodik.io/blog" }],
 });
 </script>

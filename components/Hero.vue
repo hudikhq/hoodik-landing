@@ -32,6 +32,7 @@
         <a
           href="https://github.com/hudikhq/hoodik"
           target="_blank"
+          data-umami-event="github-hero"
           class="flex items-center gap-2 px-6 py-3 rounded-lg bg-brownish-800 hover:bg-brownish-600 text-dirty-white font-semibold border border-brownish-500 transition-all duration-200"
         >
           <img
@@ -72,7 +73,8 @@
           src="/images/screenshot.png"
           alt="Hoodik - End-to-End Encrypted Cloud Storage"
           class="w-full"
-          loading="lazy"
+          fetchpriority="high"
+          decoding="async"
         />
       </div>
     </div>

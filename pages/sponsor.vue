@@ -12,6 +12,12 @@ useHead({
       property: 'og:description',
       content: 'Keep self-hosted, end-to-end encrypted cloud storage independent.',
     },
+    { property: 'og:url', content: 'https://hoodik.io/sponsor' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hoodik.io/sponsor' },
   ],
 })
 

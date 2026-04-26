@@ -4,6 +4,12 @@ useHead({
   meta: [
     { name: 'robots', content: 'noindex, nofollow' },
     { name: 'description', content: 'Legal notice and company information for Hoodik' },
+    { property: 'og:title', content: 'Imprint - Hoodik' },
+    { property: 'og:description', content: 'Legal notice and company information for Hoodik' },
+    { property: 'og:url', content: 'https://hoodik.io/imprint' },
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://hoodik.io/imprint' },
   ],
 })
 </script>
