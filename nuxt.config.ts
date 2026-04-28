@@ -6,6 +6,19 @@ export default defineNuxtConfig({
 
   modules: ["@nuxt/content", "@nuxtjs/sitemap"],
 
+  // Server-side redirects for paths that aren't real pages but show up in
+  // analytics. Each entry is a 301 — cached by the browser and any CDN
+  // in front, so a return visitor doesn't re-hit the origin. Add new
+  // dud paths here as they surface in Umami; remove once their referrer
+  // source dries up (a 404 is still the right response for a slug nobody
+  // links to anymore).
+  routeRules: {
+    // Showed up 2026-04-28 from iOS / iCloud Private Relay (no referrer).
+    // Likely a stale or typoed link shared somewhere; six hits, all 404.
+    "/blazecuu/**": { redirect: { to: "/", statusCode: 301 } },
+    "/blazecuu": { redirect: { to: "/", statusCode: 301 } },
+  },
+
   content: {
     highlight: false,
   },
